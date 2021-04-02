@@ -131,3 +131,4 @@ dmypy.json
 .fake
 .ionide
 .ionide/symbolCache.db
+.idea/
