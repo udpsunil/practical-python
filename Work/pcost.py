@@ -27,4 +27,4 @@ if __name__ == "__main__":
     filename = sys.argv[1] if len(sys.argv) == 2 else 'Data/portfolio.csv'
     cost = portfolio_cost(filename)
     # cost = portfolio_cost('Work/Data/missing.csv')
-    print(f'TOtal cost {cost}')
+    print(f'Total cost {cost}')
