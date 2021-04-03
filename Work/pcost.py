@@ -10,7 +10,7 @@ def get_no_and_cost(line):
         stock, no, cost = line.strip().split(',')
         cost = int(no) * float(cost)
     except ValueError:
-        print(f"Warining: Couldn't parse the line {line}")
+        print(f"Warning: Couldn't parse the line {line}")
         return 0.0
     return cost
 
@@ -26,5 +26,5 @@ def portfolio_cost(filename):
 if __name__ == "__main__":
     filename = sys.argv[1] if len(sys.argv) == 2 else 'Data/portfolio.csv'
     cost = portfolio_cost(filename)
-    # cost = portfolio_cost('Work/Data/missing.csv')
+    cost = portfolio_cost('Data/missing.csv')
     print(f'Total cost {cost}')
